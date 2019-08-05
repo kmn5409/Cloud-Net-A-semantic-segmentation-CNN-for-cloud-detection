@@ -26,7 +26,7 @@ def contr_arm(input_tensor, filters, kernel_size):
     x = bn_relu(x)
 
     filters_b = filters // 2
-    kernel_size_b = (kernel_size[0]-2, kernel_size[0]-2)  # creates a kernl size of (1,1) out of (3,3)
+    kernel_size_b = (kernel_size[0]-2, kernel_size[0]-2)  # creates a kernel size of (1,1) out of (3,3)
 
     x1 = Conv2D(filters_b, kernel_size_b, padding='same')(input_tensor)
     x1 = bn_relu(x1)
@@ -51,7 +51,7 @@ def imprv_contr_arm(input_tensor, filters, kernel_size ):
     x = bn_relu(x)
 
     filters_b = filters // 2
-    kernel_size_b = (kernel_size[0]-2, kernel_size[0]-2)  # creates a kernl size of (1,1) out of (3,3)
+    kernel_size_b = (kernel_size[0]-2, kernel_size[0]-2)  # creates a kernel size of (1,1) out of (3,3)
 
     x1 = Conv2D(filters_b, kernel_size_b, padding='same')(input_tensor)
     x1 = bn_relu(x1)
@@ -78,7 +78,7 @@ def bridge(input_tensor, filters, kernel_size):
     x = bn_relu(x)
 
     filters_b = filters // 2
-    kernel_size_b = (kernel_size[0]-2, kernel_size[0]-2)  # creates a kernl size of (1,1) out of (3,3)
+    kernel_size_b = (kernel_size[0]-2, kernel_size[0]-2)  # creates a kernel size of (1,1) out of (3,3)
 
     x1 = Conv2D(filters_b, kernel_size_b, padding='same')(input_tensor)
     x1 = bn_relu(x1)
